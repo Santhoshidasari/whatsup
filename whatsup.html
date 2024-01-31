@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Combined Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    p {
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Hello, World!</h1>
+  <p id="myParagraph">This is a paragraph.</p>
+  <button id="myButton">Click me</button>
+
+  <script>
+    // Simple alert when the page loads
+    window.onload = function () {
+      alert('Page loaded!');
+    }
+
+    // DOM manipulation example
+    document.getElementById('myButton').onclick = function () {
+      document.getElementById('myParagraph').innerHTML = 'Button clicked!';
+    }
+  </script>
+</body>
+</html>
